@@ -1,12 +1,11 @@
-import MinhaLista from "./components/MinhaLista"
-
+import Dados from "./components/Dados"
 
 function App() {
 
   return (
     <div>
-      <h1>Minha Lista</h1>
-      <MinhaLista />
+      <h1>Buscando Dados</h1>
+      <Dados />
     </div>
   )
 }
