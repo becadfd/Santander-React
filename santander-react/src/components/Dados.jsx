@@ -7,9 +7,9 @@ export default function Dados() {
     useEffect(() => {
 
         async function buscarDados() {
-           const resultado = await fetch('https://jsonplaceholder.typicode.com/todos')
-           const resFinal = await resultado.json()
-           return resFinal
+            const resultado = await fetch('https://jsonplaceholder.typicode.com/todos')
+            const resFinal = await resultado.json()
+            return resFinal
         }
 
         buscarDados().then(res => setTarefas(res))
@@ -19,14 +19,14 @@ export default function Dados() {
     return (
         <div>
             <ol>
-            {tarefas.map((tarefa) => {
-                return (
-                    <li key={tarefa.id}>{tarefa.title}
-                    {tarefa.completed ? ' - Tarefa Concluída' : null}
-                    </li>
-                    
-                )
-            })}
+                {tarefas.map((tarefa) => {
+                    return (
+                        <li key={tarefa.id}>{tarefa.title}
+                            {tarefa.completed ? ' - Tarefa Concluída' : null}
+                        </li>
+
+                    )
+                })}
             </ol>
         </div>
     )

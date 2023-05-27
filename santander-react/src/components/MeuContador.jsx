@@ -23,7 +23,7 @@ export default function MeuContador() {
   }
 
   return (
-    <div>
+    <div className='container'>
       <h1>Meu Contador: {contador}</h1>
       <button onClick={aumentar}>Aumentar</button>
       <button onClick={diminuir}>Diminuir</button>
