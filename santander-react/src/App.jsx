@@ -1,10 +1,11 @@
-import ContadorEstilo from './ContadorEstilo'
+import Dados from './components/Dados'
 
 function App() {
 
   return (
     <div>
-      <ContadorEstilo />
+      <h1>Dados</h1>
+      <Dados />
     </div>
   )
 }
